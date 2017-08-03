@@ -1,0 +1,24 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="Fractal_Design.MainWindow"
+        Title="Fractal Design" Height="600" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <InkCanvas x:Name="inkSurface" Margin="0" EditingModeInverted="None" EditingMode="None"/>
+        <Grid Margin="0,0,10,10" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="247.234" Height="123" d:IsLocked="True">
+            <Button Content="Draw" HorizontalAlignment="Right" Click="Button_Click" Margin="0,5" Width="52.683" Cursor="Hand"/>
+            <Slider x:Name="secondAngle" AutoToolTipPlacement="BottomRight" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="113.667" Maximum="360" Value="50" Minimum="1" Margin="76.9,25,0,0"/>
+            <Slider x:Name="firstAngle" AutoToolTipPlacement="BottomRight" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="113.667" Maximum="360" Value="180" Minimum="1" Margin="76.9,0,0,0"/>
+            <TextBlock HorizontalAlignment="Left" Margin="0,4.04,0,0" TextWrapping="Wrap" Text="First Value" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Second Value" VerticalAlignment="Top" Margin="0,29.04,0,0"/>
+            <TextBox x:Name="length" HorizontalAlignment="Left" Height="20" Margin="76.9,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="113.667" Text="1801"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Length" VerticalAlignment="Top" Margin="0,54.04,0,0"/>
+            <TextBox x:Name="radius2" HorizontalAlignment="Left" Height="20" Margin="151.781,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="37.77" Text="50"/>
+            <TextBox x:Name="radius" HorizontalAlignment="Left" Height="20" Margin="48.297,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="37.77" Text="100"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Bottom" Margin="0,0,0,28" Height="15.96"><Run Text="Radius"/><LineBreak/><Run/></TextBlock>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Bottom" Margin="91.067,0,0,28" Height="15.96"><Run Text="Radius"/><Run Text=" 2"/><LineBreak/><Run/></TextBlock>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Precision" VerticalAlignment="Top" Margin="0,105.05,0,0"/>
+            <Slider x:Name="smoothness" AutoToolTipPlacement="BottomRight" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="113.667" Maximum="50" Value="2" Minimum="1" Margin="76.9,103,0,0"/>
+        </Grid>
+    </Grid>
+</Window>
